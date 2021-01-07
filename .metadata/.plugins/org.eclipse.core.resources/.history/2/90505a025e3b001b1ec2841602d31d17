@@ -1,0 +1,15 @@
+package com.test;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.testng.annotations.Test;
+
+public class POI_Read {
+@Test
+public void test1() throws Exception {
+	FileInputStream fis = new FileInputStream("Userdata.xls");
+	Workbook wb= WorkbookFactory.create(fis);
+	
+}
+}

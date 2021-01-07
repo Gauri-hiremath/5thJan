@@ -1,0 +1,13 @@
+package com.test;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+import com.MavenFirstProject.DashboardPage;
+public class DashboardTest {
+	 DashboardPage dp=null;
+	 
+@Test
+    public void verifyCourses() {
+	dp.verifyCourses();
+}
+}

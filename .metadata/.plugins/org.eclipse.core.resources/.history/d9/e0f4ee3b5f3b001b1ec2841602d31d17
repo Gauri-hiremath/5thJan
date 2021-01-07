@@ -1,0 +1,22 @@
+package com.test;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import org.testng.annotations.Test;
+
+import com.google.common.graph.NetworkBuilder;
+
+public class POI_Read {
+@Test
+public void test1() throws Exception {
+	FileInputStream fis = new FileInputStream("Userdata.xls");
+	 Workbook wb= WorkbookFactory.create(fis);
+	Sheet sh= wb.getSheetAt(0);
+	
+}
+}
